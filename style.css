@@ -1,0 +1,388 @@
+#inicio {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./imgs/CASA-DA-VOVO-NOTICIAS-SITE-AGOSTO.png);
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abril Fatface", serif;
+}
+
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FF4500; 
+    color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF6347; /* Tom mais claro do laranja */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
+.btn-link {
+    color: #FF4500; /* Laranja avermelhado */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+    color: #FF6347; /* Tom mais claro do laranja */
+    transform: translateX(5px);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.content-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 10px rgba(255, 69, 0, 0.2);
+    z-index: 1000;
+    border-bottom: 1px solid #FF4500;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #FF4500; /* Laranja avermelhado */
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #ccc;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #FF4500; /* Laranja avermelhado */
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FF4500; /* Laranja avermelhado */
+}
+
+/* Seção Início/Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./Blog_Banner_Comida_AF_1200x.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: -80px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #FF4500; /* Laranja avermelhado */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #111;
+}
+
+#sobre h1 {
+    color: #FF4500; /* Laranja avermelhado */
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sobre p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ddd;
+}
+
+/* Seção Cardápio */
+#cardapio {
+    background-color: #000;
+}
+
+#cardapio h1 {
+    color: #FF4500; /* Laranja avermelhado */
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.prato-destaque {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.1);
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.prato-imagem img{
+    width: 100%;   
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 2px solid #FF4500;
+}
+
+.prato-destaque h2 {
+    color: #FF4500; /* Laranja avermelhado */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.prato-destaque p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.cardapio-tabela {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.1);
+    overflow-x: auto;
+    border: 1px solid #333;
+}
+
+.cardapio-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cardapio-tabela th, .cardapio-tabela td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.cardapio-tabela th {
+    background-color: #FF4500; /* Laranja avermelhado */
+    color: white;
+}
+
+.cardapio-tabela tr:hover {
+    background-color: #222;
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #111;
+}
+
+#contato h1 {
+    color: #FF4500; /* Laranja avermelhado */
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contato-info {
+    background-color: #000;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.contato-info p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+}
+
+.contato-info i {
+    margin-right: 10px;
+    color: #FF4500; /* Laranja avermelhado */
+    font-size: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links a {
+    font-size: 28px;
+    color: #FF4500; /* Laranja avermelhado */
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FF6347;
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    .hero {
+        margin-top: -120px;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .content-box {
+        padding: 0 20px;
+    }
+    
+    .prato-destaque, .cardapio-tabela {
+        padding: 20px;
+    }
+    
+    .contato-info {
+        padding: 30px 20px;
+    }
+    
+    .social-links {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    .hero h2 {
+        font-size: 24px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .cardapio-tabela th, .cardapio-tabela td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .contato-info p {
+        font-size: 16px;
+    }
+    
+    .social-links a {
+        font-size: 24px;
+    }
+}
